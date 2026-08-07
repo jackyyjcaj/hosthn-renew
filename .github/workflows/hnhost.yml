@@ -5,10 +5,6 @@ on:
   schedule:
     - cron: '0 8,16 * * *'
 
-# ⚠️ 必须添加权限配置，允许 Action 修改仓库文件
-permissions:
-  contents: write
-
 jobs:
   run_renewal:
     runs-on: ubuntu-latest
